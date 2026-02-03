@@ -1,0 +1,15 @@
+com\example\examscheduler\vista\VistaPrincipal.class
+com\example\examscheduler\solucionador\GrafoConflictos.class
+com\example\examscheduler\solucionador\OptimizadorHorarios$Solucion.class
+com\example\examscheduler\solucionador\OptimizadorHorarios$FranjaConflicto.class
+com\example\examscheduler\solucionador\OptimizadorHorarios.class
+com\example\examscheduler\modelo\Curso.class
+com\example\examscheduler\vista\PanelGrafo$2.class
+com\example\examscheduler\controlador\ControladorHorarios.class
+com\example\examscheduler\controlador\ControladorHorarios$ResultadoOptimizacion.class
+com\example\examscheduler\vista\PanelGrafo.class
+com\example\examscheduler\modelo\Estudiante.class
+com\example\examscheduler\vista\PanelGrafo$1.class
+com\example\examscheduler\controlador\ControladorHorarios$1.class
+com\example\examscheduler\solucionador\EstadoSolucion.class
+com\example\examscheduler\AplicacionPrincipal.class
