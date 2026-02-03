@@ -1,47 +1,60 @@
-Exam Scheduler - Branch & Bound Optimizer 📅x
-Este software automatiza la asignación de horarios de exámenes buscando minimizar los conflictos (solapamientos) entre cursos. Utiliza una implementación del algoritmo Branch & Bound para encontrar una solución óptima o cercana a la óptima dentro de las restricciones dadas.
+# 📅 Exam Scheduler – Branch & Bound
 
-📝 Descripción
-La aplicación modela los conflictos entre exámenes mediante un grafo, donde cada nodo es un curso y las aristas representan estudiantes compartidos. El objetivo es asignar cada examen a una franja horaria de manera que se minimice la interferencia, utilizando la librería JGraphT para el manejo de estructuras de grafos.
+## 📌 Descripción
+Software para la **asignación automática de horarios de exámenes**, cuyo objetivo es **minimizar conflictos entre cursos** mediante el uso del algoritmo **Branch & Bound**.  
+El sistema modela los conflictos como un grafo y busca una solución óptima en función de las franjas horarias disponibles.
 
-🛠️ Requisitos del Sistema
-Java Development Kit (JDK): Versión 17 o superior.
+Este proyecto fue desarrollado como parte de la asignatura **Estructura de Datos y Algoritmos II**, aplicando conceptos de grafos, optimización y algoritmos exactos.
 
-Nota: El proyecto utiliza records y otras características modernas de Java.
+---
 
-Apache Maven: Para la gestión de dependencias y construcción del proyecto.
+## ⚙️ Requisitos del Sistema
 
-📦 Librerías Externas
-El proyecto depende de la siguiente librería principal:
+- **Java Development Kit (JDK):**  
+  Versión **17 o superior** (requerido por el uso de `records`).
+- **Apache Maven:**  
+  Para la gestión de dependencias y construcción del proyecto.
 
-JGraphT: (org.jgrapht:jgrapht-core:1.5.1) - Utilizada para la modelización y análisis del grafo de conflictos.
+---
 
-🚀 Instrucciones de Ejecución
-Desde la Consola/Terminal
-Descomprimir la carpeta del proyecto.
+## 📚 Librerías Externas
 
-Navegar hasta la raíz del proyecto (donde reside el archivo pom.xml):
+- **JGraphT**  
+  `org.jgrapht:jgrapht-core:1.5.1`  
+  Utilizada para la **modelización del grafo de conflictos** entre cursos.
 
-Bash
-cd ruta/al/proyecto
-Compilar e instalar las dependencias:
+---
 
-Bash
-mvn clean install
+## ▶️ Instrucciones de Ejecución
+
+### 🔹 Consola / Terminal
+
+1. Descomprimir la carpeta del proyecto.
+2. Navegar hasta la raíz del proyecto (donde se encuentra el archivo `pom.xml`).
+3. Compilar el proyecto ejecutando:
+   ```bash
+   mvn clean install
 Ejecutar la aplicación:
 
-Bash
 mvn exec:java -Dexec.mainClass="com.example.examscheduler.AplicacionPrincipal"
-Desde un IDE (NetBeans, IntelliJ, Eclipse)
-Importar/Abrir el proyecto como un "Proyecto Maven" (Maven Project).
+🔹 IDE (NetBeans / IntelliJ IDEA / Eclipse)
+Abrir el proyecto como Maven Project.
 
-Sincronizar: Esperar a que el IDE descargue automáticamente las dependencias desde el repositorio central de Maven.
+Esperar a que se descarguen automáticamente las dependencias (incluyendo JGraphT).
 
-Localizar la clase principal: AplicacionPrincipal.java dentro del paquete com.example.examscheduler.
+Ubicar la clase:
 
-Ejecutar: Clic derecho sobre el archivo y seleccionar Run File o Ejecutar.
+com.example.examscheduler.AplicacionPrincipal
+Clic derecho sobre el archivo → Run File / Ejecutar.
 
-💡 Notas Adicionales
-Rendimiento: Debido a la naturaleza del algoritmo Branch & Bound (NP-Hard), el tiempo de ejecución puede variar desde unos segundos hasta un poco más, dependiendo de la densidad del grafo de conflictos y el número de franjas horarias.
+📝 Notas Adicionales
+El algoritmo puede tardar algunos segundos dependiendo del número de cursos y franjas horarias seleccionadas.
 
-Logs: Puedes monitorear el progreso de la optimización y las podas del algoritmo directamente en la consola de salida del IDE o terminal.
+Los logs de optimización y el proceso de búsqueda se muestran en la salida estándar (consola) del IDE o terminal.
+
+
+Esto es exactamente el **mismo contenido de un README.md**, solo que presentado como **texto plano**.  
+Si lo deseas, puedo:
+- Quitar emojis (más formal)
+- Adaptarlo a una **rúbrica universitaria**
+- O añadir sección de **algoritmo y complejidad**
